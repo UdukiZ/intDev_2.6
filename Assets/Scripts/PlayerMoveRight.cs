@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMove : MonoBehaviour
+public class PlayerMoveRight : MonoBehaviour
 {
     public Rigidbody2D armBody;
     Rigidbody2D mainBody;
@@ -22,7 +22,7 @@ public class PlayerMove : MonoBehaviour
     {
         //mainBody.velocity = Vector3.zero;
 
-      if (Input.GetKeyDown(KeyCode.A)) {
+      if (Input.GetKeyDown(KeyCode.D)) {
         
         armBody.AddForce(transform.up * power, ForceMode2D.Impulse);
         //mainBody.AddForce(Vector2.up * power, ForceMode2D.Impulse);
